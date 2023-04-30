@@ -22,7 +22,6 @@ const bot = new TelegramBot(token, {
 
 bot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
-    const messageText = msg.text; // получаем текст сообщения
     // если равен, отправляем сообщение с клавиатурой
     bot.sendMessage(chatId, 'Привет! Я - бот, который поможет вам войти в IT сферу.\nЕсли вы хотите ' +
         'научиться создавать веб-сайты или разрабатывать мобильные приложения, то' +
@@ -30,7 +29,7 @@ bot.onText(/\/start/, (msg) => {
         'Не теряйте время и начните свой путь к успеху прямо сейчас!', {
         reply_markup: {
             keyboard:[
-                ["💻Стать программистом!💻"]
+                ["💻Стать программистом!💻💻"]
             ],resize_keyboard: true
         }
     });
