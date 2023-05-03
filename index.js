@@ -2,7 +2,11 @@ const TelegramBot = require('node-telegram-bot-api'); // подключаем no
 const token = '5247399152:AAF0TiC8uCodQQ61DCFk_RWhYbQHQa3F85Q'; // тут токен кторый мы получили от botFather
 const {
     front0,
-    front1,
+    js,
+    html,
+    css,
+    ideF,
+    stagesF,
 } = require('./front')
 
 const {
@@ -83,8 +87,16 @@ bot.on('message', (msg)=>{
     //Ветка фронта
     else if(messageText==="🌚Front-end🌚"){
         front0(chatId,bot)
-    }else if(messageText==="Начать изучение Front-end"){
-        front1(chatId,bot)
+    }else if(messageText==="JS"){
+        js(chatId,bot)
+    }else if(messageText==="HTML"){
+        html(chatId,bot)
+    }else if(messageText==="CSS"){
+        css(chatId,bot)
+    }else if(messageText==="Как установить среду разработки"){
+        ideF(chatId,bot)
+    }else if(messageText==="Этапы развития"){
+        stagesF(chatId,bot)
     }
     //Ветка фронта
 
