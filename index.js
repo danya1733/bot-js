@@ -89,7 +89,7 @@ bot.on('message', (msg)=>{
         front0(chatId,bot)
     }else if(messageText==="Как установить среду разработки?"){
         ideF(chatId, bot)
-    }else if(messageText==="Средаdnasjkdnjksak разработки установлена!"){
+    }else if(messageText==="Среда разработки установлена!"){
         ideInstalled(chatId, bot)
     }else if(messageText==="Javascript"){
         js(chatId, bot)
