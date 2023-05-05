@@ -6,7 +6,7 @@ const {
     html,
     css,
     ideF,
-    stagesF,
+    ideInstalled
 } = require('./front')
 
 const {
@@ -87,16 +87,16 @@ bot.on('message', (msg)=>{
     //Ветка фронта
     else if(messageText==="🌚Front-end🌚"){
         front0(chatId,bot)
-    }else if(messageText==="JS"){
-        js(chatId,bot)
+    }else if(messageText==="Как установить среду разработки?"){
+        ideF(chatId, bot)
+    }else if(messageText==="Среда разработки установлена!"){
+        ideInstalled(chatId, bot)
+    }else if(messageText==="Javascript"){
+        js(chatId, bot)
     }else if(messageText==="HTML"){
-        html(chatId,bot)
-    }else if(messageText==="CSS"){
-        css(chatId,bot)
-    }else if(messageText==="Как установить среду разработки"){
-        ideF(chatId,bot)
-    }else if(messageText==="Этапы развития"){
-        stagesF(chatId,bot)
+        html(chatId, bot)
+    }else if (messageText==="CSS"){
+        css(chatId, bot)
     }
     //Ветка фронта
 
