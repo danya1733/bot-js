@@ -244,14 +244,14 @@ bot.on('message', (msg)=>{
     //android
     else if(messageText==="🤖Android🤖"){
         android0(chatId, bot)
-    }else if(messageText==="Среда разработки установлена!") {
+    }else if(messageText==="Среда разработки установлeнa!") {
         android1(chatId, bot)
     }
     else if(messageText==="☕️Java☕️"){
         android2(chatId, bot)
-    }else if(messageText==="Компилятор установлен!"){
+    }else if(messageText==="Компилятор установлeн!"){
         android3(chatId, bot)
-    }else if(messageText==="Готов идти дальше!"){
+    }else if(messageText==="Гoтoв идти дaльше!"){
         android4(chatId, bot)
     }else if(messageText==="К следующему шагу!"){
         android5(chatId, bot)

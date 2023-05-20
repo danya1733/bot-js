@@ -8,7 +8,7 @@ function android0(chatId, bot,){
         "Вот ссылка откуда можно скачать IntelliJ IDEA: https://www.jetbrains.com/idea/download/#section=windows",{
         reply_markup: {
             keyboard:[
-                ["Среда разработки установлена!"],
+                ["Среда разработки установлeнa!"],
             ],resize_keyboard: true
         }
     })
@@ -38,7 +38,7 @@ function android2(chatId, bot,){
         "Установить последнюю версию компилятора можно по этой ссылке: https://www.oracle.com/java/technologies/downloads/",{
         reply_markup: {
             keyboard:[
-                ["Компилятор установлен!"]
+                ["Компилятор установлeн!"]
             ],resize_keyboard: true
         }
     })
@@ -54,7 +54,7 @@ function android3(chatId, bot,){
         "Для практики рекомендуется переписывать код из видео и периодически решать задачи с этого сайта: https://www.codewars.com/kata/java",{
             reply_markup: {
                 keyboard:[
-                    ["Готов идти дальше!"]
+                    ["Гoтoв идти дaльше!"]
                 ],resize_keyboard: true
             }
         })
