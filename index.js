@@ -15,7 +15,25 @@ const {
     back2,
     back3,
     back4,
-    back5
+    back5,
+    back6,
+    back7,
+    back8,
+    back9,
+    back10,
+    back11,
+    back12,
+    back13,
+    back14,
+    back15,
+    back16,
+    back17,
+    back18,
+    back19,
+    back20,
+    back21,
+    back22,
+    back23
 } = require('./back')
 
 
@@ -143,7 +161,52 @@ bot.on('message', (msg)=>{
         back5(chatId,bot)
     }else if(messageText==="Django"){
         back6(chatId,bot)
+    }else if(messageText==="Качаем"){
+        back7(chatId,bot)
     }
+    //java
+    else if(messageText==="Java") {
+        back8(chatId, bot)
+    }else if(messageText==="Среда разработки установленa") {
+        back9(chatId, bot)
+    }else if(messageText==="Spring Boot") {
+        back10(chatId, bot)
+    }else if(messageText==="Качаем!") {
+        back11(chatId, bot)
+    }
+    //js
+    else if(messageText==="JS") {
+        back12(chatId, bot)
+    }else if(messageText==="Среда разработки установленa!") {
+        back13(chatId, bot)
+    }else if(messageText==="Node.JS") {
+        back14(chatId, bot)
+    }else if(messageText==="Качаeм!") {
+        back15(chatId, bot)
+    }
+    //c#
+    else if(messageText==="C#") {
+        back16(chatId, bot)
+    }else if(messageText==="Среда разработки устанoвленa!") {
+        back17(chatId, bot)
+    }else if(messageText==="ASP.NET Core") {
+        back18(chatId, bot)
+    }else if(messageText==="Качаeм") {
+        back19(chatId, bot)
+    }
+
+    //php
+
+    else if(messageText==="PHP") {
+        back20(chatId, bot)
+    }else if(messageText==="Средa разработки устанoвленa!") {
+        back21(chatId, bot)
+    }else if(messageText==="Laravel") {
+        back22(chatId, bot)
+    }else if(messageText==="Кaчaeм!") {
+        back23(chatId, bot)
+    }
+
     //Ветка бэка
 
 
