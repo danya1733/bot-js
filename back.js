@@ -70,8 +70,8 @@ function back5(chatId, bot,){
         "Для каждого языка они свои, и сейчас ты узнаешь о самых популярных из них.",{
         reply_markup: {
             keyboard:[
-                ["Django","Spring Boot","Node.JS"],
-                ["ASP.NET Core","Laravel"]
+                ["Django(Python)","Spring Boot(Java)","Node.JS"],
+                ["ASP.NET Core(C#)","Laravel(PHP)"]
             ],resize_keyboard: true
         }
     })
@@ -99,7 +99,7 @@ function back7(chatId, bot,){
         "https://youtube.com/playlist?list=PLA0M1Bcd0w8xO_39zZll2u1lz_Q-Mwn1F",{
         reply_markup: {
             keyboard:[
-                ["Pet-проект"]
+                ["Pеt-проeкт"]
             ],resize_keyboard: true
         }
     })
@@ -144,11 +144,13 @@ function back10(chatId, bot,){
     })
 }
 function back11(chatId, bot,){
-    bot.sendMessage(chatId,"смотрим плейлист:\n" +
-        "https://youtube.com/playlist?list=PLAma_mKffTOR5o0WNHnY0mTjKxnCgSXrZ\n",{
+    bot.sendMessage(chatId,"Теперь необходимо скачать и установить фреймворк с сайта:\n" +
+        "https://spring.io/projects/spring-framework/\n" +
+        "И смотрим плейлист:\n" +
+        "https://youtube.com/playlist?list=PL0lO_mIqDDFUYDRzvocu5EsFGBqPM7CIw",{
         reply_markup: {
             keyboard:[
-                ["Pet-проект"]
+                ["Pеt-проeкт"]
             ],resize_keyboard: true
         }
     })
@@ -198,7 +200,7 @@ function back15(chatId, bot,){
         "https://youtube.com/playlist?list=PLDyvV36pndZFWfEQpNixIHVvp191Hb3Gg",{
         reply_markup: {
             keyboard:[
-                ["Pet-проект"]
+                ["Pеt-проeкт"]
             ],resize_keyboard: true
         }
     })
@@ -232,7 +234,7 @@ function back17(chatId, bot,){
 }
 
 function back18(chatId, bot,){
-    bot.sendMessage(chatId,"ASP.NET MVC. Данная платформа основана на шаблонах, которые ускоряют и упрощают разработку динамических веб-сайтов. При этом программист может четко разделять проблемы и получает абсолютный контроль над разметкой, что делает процесс более гибким.",{
+    bot.sendMessage(chatId,"ASP.NET MVC. C# фреймоврк основанный на шаблонах, которые ускоряют и упрощают разработку динамических веб-сайтов. При этом программист может четко разделять проблемы и получает абсолютный контроль над разметкой, что делает процесс более гибким.",{
         reply_markup: {
             keyboard:[
                 ["Качаeм"]
@@ -247,7 +249,7 @@ function back19(chatId, bot,){
         "https://youtube.com/playlist?list=PLL-k0Ff5RfqXnwdDG61WqZ2j3KXUPnfmq",{
         reply_markup: {
             keyboard:[
-                ["Pet-проект"]
+                ["Pеt-проeкт"]
             ],resize_keyboard: true
         }
     })
@@ -295,7 +297,7 @@ function back23(chatId, bot,){
         "https://youtube.com/playlist?list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU",{
         reply_markup: {
             keyboard:[
-                ["Pet-проект"]
+                ["Pеt-проeкт"]
             ],resize_keyboard: true
         }
     })
