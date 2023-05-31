@@ -1,5 +1,5 @@
 const TelegramBot = require('node-telegram-bot-api'); // подключаем node-telegram-bot-api
-const token = '6088249077:AAGiLBMWejxk1evakXQHmUOePZg'; // тут токен кторый мы получили от botFather
+const token = '6088249077:AAGiLBMWejxk1evadsadsakXQHmUOePZg'; // тут токен кторый мы получили от botFather
 const {
     front0,
     front1, front2, front3, front4, front5, angular, vue, react, petweb, guide,
