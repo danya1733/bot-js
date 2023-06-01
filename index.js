@@ -1,5 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api'); // подключаем node-telegram-bot-api
-const token = '6088249077:AAGiLBMWejxk1evadsadsakXQHmUOePZg'; // тут токен кторый мы получили от botFather
+const token = '6088249077:AAGiLBMWejNNGP97ZExk1evakXQH123231mUOePZg'; // тут токен кторый мы получили от botFather
+const fs = require('fs');
 const {
     front0,
     front1, front2, front3, front4, front5, angular, vue, react, petweb, guide,
@@ -66,6 +67,7 @@ const bot = new TelegramBot(token, {
 
 bot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
+    const userId = msg.from.id;
     // если равен, отправляем сообщение с клавиатурой
     bot.sendMessage(chatId, 'Привет! Я - бот, который поможет вам войти в IT сферу.\nЕсли ты хочешь ' +
         'научиться создавать веб-сайты или разрабатывать мобильные приложения, то ' +
@@ -77,7 +79,26 @@ bot.onText(/\/start/, (msg) => {
             ],resize_keyboard: true
         }
     });
+    fs.readFile('user_ids.txt', 'utf8', (err, data) => {
+        if (err) {
+            console.error(err);
+            return;
+        }
 
+        const userIDs = data.split('\n').filter(Boolean);
+        if (userIDs.includes(String(userId))) {
+            console.log(`User ID ${userId} is already recorded.`);
+        } else {
+            // Записываем уникальный ID пользователя в файл
+            fs.appendFile('user_ids.txt', `${userId}\n`, (err) => {
+                if (err) {
+                    console.error(err);
+                } else {
+                    console.log(`User ID ${userId} has been written to file.`);
+                }
+            });
+        }
+    });
 });
 
 bot.on('message', (msg)=>{
